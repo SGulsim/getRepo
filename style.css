@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container::before,
+.container::after {
+    content: none !important;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.container {
+    width: 661px;
+    min-height: 100vh;
+
+    margin: 0 auto;
+    background-color: #C4C4C4;
+
+    display: flex;
+}
+
+.wrapper {
+    margin-top: 60px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    width: 100%;
+}
+
+#inputWithDropDownMenu {
+    width: 100%;
+    max-width: 500px;
+    position: relative;
+}
+
+#myInput {
+    width: 100%;
+    max-width: 500px;
+    height: 61px;
+
+    box-sizing: border-box;
+    padding: 10px;
+
+    font-size: 24px;
+}
+
+.dropDownMenu {
+    width: 100%;
+    max-width: 500px;
+
+    display: none;
+    position: absolute;
+
+    top: 61px;
+    left: 0;
+
+    background-color: white;
+
+    border: 1px solid #ccc;
+    border-top: none;
+
+    z-index: 10;
+}
+
+.menu {
+    width: 100%;
+    max-width: 500px;
+
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.menu li {
+    padding: 10px;
+    cursor: pointer;
+
+    list-style-type: none;
+
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+}
+
+.menu li:last-child {
+    border-bottom: none;
+}
+
+.menu li:hover {
+    background-color: #f0f0f0;
+}
+
+#listOfRepos {
+    width: 503px;
+    min-height: 101px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.repo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    position: relative;
+    padding: 10px;
+
+    background-color: #E27BEB;
+    border: 1px solid black;
+
+    font-size: 24px;
+}
+
+.repo>p {
+    padding-right: 60px;
+}
+
+.button-container {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+}
+
+.buttonDelete {
+    width: 50px;
+    height: 50px;
+
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 24px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.buttonDelete:hover {
+    background-color: #cc0000;
+}
